@@ -56,7 +56,7 @@ The original planter included a shallow embossed flower ornament. The depth sign
 
 ![Generated planter with redesigned floral detail](renders/experiments/flower_detail_limit.png)
 
-This is a genuine limitation of the tested workflow, not something corrected artificially in the evidence. The controlled final experiment will therefore use a simplified prop without shallow surface relief, so the test matches the geometric information depth conditioning preserves reliably. That simplified asset is still in progress.
+This is a genuine limitation of the tested workflow, not something corrected artificially in the evidence. The source asset is intentionally left unchanged. The shallow flower relief remains part of the original geometry and serves as a useful boundary case: macro-scale structure is preserved reliably, while subtle surface relief may be reinterpreted by the generative model.
 
 ## What this demonstrates
 
@@ -77,4 +77,4 @@ This is a genuine limitation of the tested workflow, not something corrected art
 
 ## Status
 
-Work in progress. The project will continue with a simplified controlled asset and additional material exploration.
+Work in progress. The next stage evaluates the generated material directions and develops the selected visual concepts further while retaining the original authored geometry.
