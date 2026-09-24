@@ -24,14 +24,18 @@ Test where AI-assisted workflows can genuinely accelerate game-asset visual iter
 
 ## Experiment
 
-I modeled an original planter in Blender and rendered a geometry-derived Mist/depth pass. In ComfyUI, the Mist image was inverted to the near-bright depth convention expected by the FLUX.1 Depth workflow, then used as structural conditioning. Material directions included neutral ceramic, blue glazed ceramic, and gold accents or ornamental treatments.
+I modeled an original planter in Blender and rendered a geometry-derived Mist/depth pass. In ComfyUI, the Mist image was inverted to the near-bright depth convention expected by the FLUX.1 Depth workflow, then used as structural conditioning. Material directions included cream ceramic, cobalt blue glaze with gold accents, terracotta, aged stone, hand-painted ceramic, and matte sage green paint.
 
 | Stage | Evidence |
 | --- | --- |
 | Authored Blender base render | ![Original planter modeled in Blender](renders/base/bloomforge_beauty.png) |
 | Geometry-derived Mist control | ![Mist pass from the Blender geometry](renders/depth/bloomforge_mist.png) |
-| First successful neutral ceramic exploration | ![Neutral ceramic FLUX Depth result](renders/generated/neutral_ceramic.png) |
-| Blue glazed ceramic and gold exploration | ![Blue and gold FLUX Depth result](renders/generated/blue_gold_ceramic.png) |
+| Cream ceramic exploration | ![Cream ceramic FLUX Depth result](renders/generated/neutral_ceramic.png) |
+| Cobalt blue glaze and gold exploration | ![Blue and gold FLUX Depth result](renders/generated/blue_gold_ceramic.png) |
+| Terracotta exploration | ![Terracotta FLUX Depth result](renders/generated/terracotta.png) |
+| Aged stone exploration | ![Aged stone FLUX Depth result](renders/generated/aged_stone.png) |
+| Hand-painted ceramic exploration | ![Sky-blue and cream painted ceramic FLUX Depth result](renders/generated/folk_ceramic.png) |
+| Matte sage-green exploration | ![Sage-green painted planter FLUX Depth result](renders/generated/sage_green.png) |
 | Flower-detail limitation | ![Generated planter with redesigned floral detail](renders/experiments/flower_detail_limit.png) |
 
 ## Results

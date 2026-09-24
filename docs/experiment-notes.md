@@ -10,9 +10,15 @@ These images were copied without editing from local BloomForge output files gene
 | --- | --- | --- |
 | `renders/experiments/initial_trial_01.png` | `BloomForge_FLUXDepth_00001_.png` | Noisy early setup result. |
 | `renders/experiments/initial_trial_02.png` | `BloomForge_FLUXDepth_00002_.png` | Second noisy early setup result. |
-| `renders/generated/neutral_ceramic.png` | `BloomForge_FLUXDepth_00003_.png` | First usable neutral/cream ceramic direction. |
-| `renders/generated/blue_gold_ceramic.png` | `BloomForge_FLUXDepth_00004_.png` | Blue glaze and gold ornamental direction. |
+| `renders/experiments/early_neutral_ceramic.png` | `BloomForge_FLUXDepth_00003_.png` | First usable neutral/cream ceramic direction. |
+| `renders/experiments/early_blue_gold_ceramic.png` | `BloomForge_FLUXDepth_00004_.png` | Earlier blue glaze and gold ornamental direction. |
 | `renders/experiments/blue_gold_variant.png` | `BloomForge_FLUXDepth_00005_.png` | Additional blue and gold ornament test. |
 | `renders/experiments/flower_detail_limit.png` | `BloomForge_FLUXDepth_00006_.png` | Large shape retained, shallow flower detail redesigned into a different decoration. |
+| `renders/generated/neutral_ceramic.png` | `BloomForge_FLUXDepth_00007_.png` | Cream glazed ceramic material test. |
+| `renders/generated/blue_gold_ceramic.png` | `BloomForge_FLUXDepth_00008_.png` | Cobalt blue glaze with antique gold. |
+| `renders/generated/terracotta.png` | `BloomForge_FLUXDepth_00009_.png` | Warm matte terracotta test. |
+| `renders/generated/aged_stone.png` | `BloomForge_FLUXDepth_00010_.png` | Weathered gray-beige carved stone test. |
+| `renders/generated/folk_ceramic.png` | `BloomForge_FLUXDepth_00011_.png` | Sky-blue and cream hand-painted ceramic test. |
+| `renders/generated/sage_green.png` | `BloomForge_FLUXDepth_00013_.png` | Matte sage-green painted garden planter test. |
 
-The first two results preceded the corrected depth workflow. Outputs 3–6 demonstrate that the corrected conditioning holds the main form but cannot guarantee shallow relief fidelity. These outputs are exploration evidence, not production-ready textures or finished assets.
+The first two results preceded the corrected depth workflow. Later outputs demonstrate that depth conditioning holds the main form but cannot guarantee shallow relief fidelity. These outputs are exploration evidence, not production-ready textures or finished assets.
