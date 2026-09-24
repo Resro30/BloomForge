@@ -3,6 +3,16 @@
 
 BloomForge is a self-directed technical art study exploring how artist-created Blender geometry and depth-conditioned generative AI can accelerate visual iteration while retaining structural control.
 
+## From Blender to material exploration
+
+| 1. Authored Blender planter | → 2. Geometry-derived Mist/depth | → 3. FLUX.1 Depth result |
+| --- | --- | --- |
+| ![Original planter render from the Blender model](renders/base/bloomforge_beauty.png) | ![Mist depth control rendered from the same geometry](renders/depth/bloomforge_mist.png) | ![Cream ceramic material exploration generated with depth conditioning](renders/generated/neutral_ceramic.png) |
+
+The Blender model sets the shape and camera view. Its Mist pass supplies structural guidance to FLUX.1 Depth; the result explores a cream ceramic finish while retaining the planter's main form. Shallow flower relief is a documented limitation below.
+
+**Inspect the evidence:** [Blender source](blender/BloomForge_Planter.blend) · [ComfyUI workflow](comfyui/bloomforge_flux_depth_workflow.json) · [Generated PNG with embedded prompt and workflow metadata](renders/generated/neutral_ceramic.png).
+
 ## Overview
 
 This is not text-to-image asset generation from scratch. The workflow begins with authored 3D geometry and uses a geometry-derived depth image to guide visual exploration. The generated results are references for artist evaluation, not finished game assets.
@@ -26,17 +36,15 @@ Test where AI-assisted workflows can genuinely accelerate game-asset visual iter
 
 I modeled an original planter in Blender and rendered a geometry-derived Mist/depth pass. In ComfyUI, the Mist image was inverted to the near-bright depth convention expected by the FLUX.1 Depth workflow, then used as structural conditioning. Material directions included cream ceramic, cobalt blue glaze with gold accents, terracotta, aged stone, hand-painted ceramic, and matte sage green paint.
 
-| Stage | Evidence |
+Additional material directions using the same depth-guided workflow:
+
+| Material direction | Generated study |
 | --- | --- |
-| Authored Blender base render | ![Original planter modeled in Blender](renders/base/bloomforge_beauty.png) |
-| Geometry-derived Mist control | ![Mist pass from the Blender geometry](renders/depth/bloomforge_mist.png) |
-| Cream ceramic exploration | ![Cream ceramic FLUX Depth result](renders/generated/neutral_ceramic.png) |
-| Cobalt blue glaze and gold exploration | ![Blue and gold FLUX Depth result](renders/generated/blue_gold_ceramic.png) |
-| Terracotta exploration | ![Terracotta FLUX Depth result](renders/generated/terracotta.png) |
-| Aged stone exploration | ![Aged stone FLUX Depth result](renders/generated/aged_stone.png) |
-| Hand-painted ceramic exploration | ![Sky-blue and cream painted ceramic FLUX Depth result](renders/generated/folk_ceramic.png) |
-| Matte sage-green exploration | ![Sage-green painted planter FLUX Depth result](renders/generated/sage_green.png) |
-| Flower-detail limitation | ![Generated planter with redesigned floral detail](renders/experiments/flower_detail_limit.png) |
+| Cobalt blue glaze and gold | ![Blue and gold FLUX Depth result](renders/generated/blue_gold_ceramic.png) |
+| Terracotta | ![Terracotta FLUX Depth result](renders/generated/terracotta.png) |
+| Aged stone | ![Aged stone FLUX Depth result](renders/generated/aged_stone.png) |
+| Hand-painted ceramic | ![Sky-blue and cream painted ceramic FLUX Depth result](renders/generated/folk_ceramic.png) |
+| Matte sage green | ![Sage-green painted planter FLUX Depth result](renders/generated/sage_green.png) |
 
 ## Results
 
@@ -44,7 +52,9 @@ Depth conditioning preserved the silhouette, overall proportions, taper, rim and
 
 ## Limitation discovered
 
-The original planter included a shallow embossed flower ornament. The depth signal preserved the planter's macro geometry but did not reliably encode that shallow relief strongly enough to constrain the generative model. FLUX sometimes redesigned or replaced the ornament, as the example above shows.
+The original planter included a shallow embossed flower ornament. The depth signal preserved the planter's macro geometry but did not reliably encode that shallow relief strongly enough to constrain the generative model. FLUX sometimes redesigned or replaced the ornament, as this experiment shows.
+
+![Generated planter with redesigned floral detail](renders/experiments/flower_detail_limit.png)
 
 This is a genuine limitation of the tested workflow, not something corrected artificially in the evidence. The controlled final experiment will therefore use a simplified prop without shallow surface relief, so the test matches the geometric information depth conditioning preserves reliably. That simplified asset is still in progress.
 
